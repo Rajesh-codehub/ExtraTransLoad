@@ -1,0 +1,6 @@
+source_location,type,addOn
+/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.csv,csv,
+/home/razz/Rajesh/ExtraTransLoad/source_files/delimter.csv,delimited,;
+/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.xlsx,excel,
+/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.parquet,parquet,
+/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.json,json,columns

@@ -43,6 +43,21 @@ for source_location,type,addOn in zip(source_locations,types,addOns):
         log.info('successfully loaded json file')
         file_name = source_location.split("/")[-1]
         log.info(f"output file name {file_name}")
+    elif type == 'sql': 
+        if addOn == 'mysql':
+            root = "mysql+mysqlconnector"
+            df,file_name = Dr.read_from_sql_file(source_location,root)
+            log.info('successfully loaded dataframe from sql;mysql')
+            log.info(f"output file name {file_name}")
+
+        elif addOn == 'postgres':
+            root = "postgresql+psycopg2"
+            df,file_name = Dr.read_from_sql_file(source_location,root)
+            log.info('successfully loaded dataframe from sql;postgres')
+            log.info(f"output file name {file_name}")
+
+        else:
+            print("kindly check your config file!")
 
     else:
         print("kindly check your config file!")

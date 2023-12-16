@@ -109,3 +109,57 @@
 2023-12-15 12:27:49,569 - common_utils.logger_config - INFO - output file name mockdata.parquet
 2023-12-15 12:27:49,576 - common_utils.logger_config - INFO - successfully loaded json file
 2023-12-15 12:27:49,577 - common_utils.logger_config - INFO - output file name mockdata.json
+2023-12-16 11:22:46,490 - common_utils.logger_config - INFO - successfully loaded csv file
+2023-12-16 11:22:46,491 - common_utils.logger_config - INFO - output file name mockdata.csv
+2023-12-16 11:22:46,493 - common_utils.logger_config - INFO - successfully loaded delimited file
+2023-12-16 11:22:46,493 - common_utils.logger_config - INFO - output file name delimter.csv
+2023-12-16 11:22:46,831 - common_utils.logger_config - INFO - successfully loaded excel file
+2023-12-16 11:22:46,832 - common_utils.logger_config - INFO - output file name mockdata.xlsx
+2023-12-16 11:22:47,056 - common_utils.logger_config - INFO - successfully loaded parquet file
+2023-12-16 11:22:47,057 - common_utils.logger_config - INFO - output file name mockdata.parquet
+2023-12-16 11:22:47,061 - common_utils.logger_config - INFO - successfully loaded json file
+2023-12-16 11:22:47,062 - common_utils.logger_config - INFO - output file name mockdata.json
+2023-12-16 11:22:48,376 - common_utils.logger_config - INFO - successfully loaded dataframe from sql
+2023-12-16 11:22:48,377 - common_utils.logger_config - INFO - output file name employees
+2023-12-16 11:45:36,847 - common_utils.logger_config - INFO - successfully loaded csv file
+2023-12-16 11:45:36,847 - common_utils.logger_config - INFO - output file name mockdata.csv
+2023-12-16 11:45:36,848 - common_utils.logger_config - INFO - successfully loaded delimited file
+2023-12-16 11:45:36,848 - common_utils.logger_config - INFO - output file name delimter.csv
+2023-12-16 11:45:36,965 - common_utils.logger_config - INFO - successfully loaded excel file
+2023-12-16 11:45:36,965 - common_utils.logger_config - INFO - output file name mockdata.xlsx
+2023-12-16 11:45:37,018 - common_utils.logger_config - INFO - successfully loaded parquet file
+2023-12-16 11:45:37,018 - common_utils.logger_config - INFO - output file name mockdata.parquet
+2023-12-16 11:45:37,022 - common_utils.logger_config - INFO - successfully loaded json file
+2023-12-16 11:45:37,024 - common_utils.logger_config - INFO - output file name mockdata.json
+2023-12-16 11:45:38,301 - common_utils.logger_config - INFO - successfully loaded dataframe from sql
+2023-12-16 11:45:38,302 - common_utils.logger_config - INFO - output file name employees
+2023-12-16 11:45:39,401 - common_utils.logger_config - INFO - successfully loaded dataframe from sql
+2023-12-16 11:45:39,402 - common_utils.logger_config - INFO - output file name biodata
+2023-12-16 11:46:05,185 - common_utils.logger_config - INFO - successfully loaded csv file
+2023-12-16 11:46:05,185 - common_utils.logger_config - INFO - output file name mockdata.csv
+2023-12-16 11:46:05,187 - common_utils.logger_config - INFO - successfully loaded delimited file
+2023-12-16 11:46:05,187 - common_utils.logger_config - INFO - output file name delimter.csv
+2023-12-16 11:46:05,316 - common_utils.logger_config - INFO - successfully loaded excel file
+2023-12-16 11:46:05,316 - common_utils.logger_config - INFO - output file name mockdata.xlsx
+2023-12-16 11:46:05,358 - common_utils.logger_config - INFO - successfully loaded parquet file
+2023-12-16 11:46:05,359 - common_utils.logger_config - INFO - output file name mockdata.parquet
+2023-12-16 11:46:05,363 - common_utils.logger_config - INFO - successfully loaded json file
+2023-12-16 11:46:05,364 - common_utils.logger_config - INFO - output file name mockdata.json
+2023-12-16 11:46:06,596 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;mysql
+2023-12-16 11:46:06,596 - common_utils.logger_config - INFO - output file name employees
+2023-12-16 11:46:07,676 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;postgres
+2023-12-16 11:46:07,676 - common_utils.logger_config - INFO - output file name biodata
+2023-12-16 12:36:09,355 - common_utils.logger_config - INFO - successfully loaded csv file
+2023-12-16 12:36:09,355 - common_utils.logger_config - INFO - output file name mockdata.csv
+2023-12-16 12:36:09,357 - common_utils.logger_config - INFO - successfully loaded delimited file
+2023-12-16 12:36:09,357 - common_utils.logger_config - INFO - output file name delimter.csv
+2023-12-16 12:36:09,466 - common_utils.logger_config - INFO - successfully loaded excel file
+2023-12-16 12:36:09,466 - common_utils.logger_config - INFO - output file name mockdata.xlsx
+2023-12-16 12:36:09,515 - common_utils.logger_config - INFO - successfully loaded parquet file
+2023-12-16 12:36:09,516 - common_utils.logger_config - INFO - output file name mockdata.parquet
+2023-12-16 12:36:09,520 - common_utils.logger_config - INFO - successfully loaded json file
+2023-12-16 12:36:09,521 - common_utils.logger_config - INFO - output file name mockdata.json
+2023-12-16 12:36:10,927 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;mysql
+2023-12-16 12:36:10,928 - common_utils.logger_config - INFO - output file name employees
+2023-12-16 12:36:11,851 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;postgres
+2023-12-16 12:36:11,851 - common_utils.logger_config - INFO - output file name biodata

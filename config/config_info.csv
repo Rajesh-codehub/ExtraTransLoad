@@ -4,3 +4,5 @@ source_location,type,addOn
 /home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.xlsx,excel,
 /home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.parquet,parquet,
 /home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.json,json,columns
+/home/razz/Rajesh/ExtraTransLoad/Credentials/mysql.json,sql,mysql
+/home/razz/Rajesh/ExtraTransLoad/Credentials/postgres.json,sql,postgres

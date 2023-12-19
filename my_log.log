@@ -163,3 +163,18 @@
 2023-12-16 12:36:10,928 - common_utils.logger_config - INFO - output file name employees
 2023-12-16 12:36:11,851 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;postgres
 2023-12-16 12:36:11,851 - common_utils.logger_config - INFO - output file name biodata
+2023-12-19 13:01:48,594 - common_utils.logger_config - INFO - successfully loaded csv file
+2023-12-19 13:01:48,595 - common_utils.logger_config - INFO - output file name mockdata.csv
+2023-12-19 13:01:48,598 - common_utils.logger_config - INFO - successfully loaded delimited file
+2023-12-19 13:01:48,598 - common_utils.logger_config - INFO - output file name delimter.csv
+2023-12-19 13:01:48,996 - common_utils.logger_config - INFO - successfully loaded excel file
+2023-12-19 13:01:48,997 - common_utils.logger_config - INFO - output file name mockdata.xlsx
+2023-12-19 13:01:49,254 - common_utils.logger_config - INFO - successfully loaded parquet file
+2023-12-19 13:01:49,254 - common_utils.logger_config - INFO - output file name mockdata.parquet
+2023-12-19 13:01:49,261 - common_utils.logger_config - INFO - successfully loaded json file
+2023-12-19 13:01:49,261 - common_utils.logger_config - INFO - output file name mockdata.json
+2023-12-19 13:01:50,768 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;mysql
+2023-12-19 13:01:50,772 - common_utils.logger_config - INFO - output file name employees
+2023-12-19 13:01:51,613 - common_utils.logger_config - INFO - successfully loaded dataframe from sql;postgres
+2023-12-19 13:01:51,613 - common_utils.logger_config - INFO - output file name biodata
+2023-12-19 13:01:51,895 - common_utils.logger_config - INFO - successfully loaded dataframe from cloud;aws

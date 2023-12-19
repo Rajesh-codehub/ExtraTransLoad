@@ -58,6 +58,9 @@ for source_location,type,addOn in zip(source_locations,types,addOns):
 
         else:
             print("kindly check your config file!")
+    elif type == 'cloud':
+        df = Dr.read_from_cloud(source_location)
+        log.info('successfully loaded dataframe from cloud;aws')
 
     else:
         print("kindly check your config file!")

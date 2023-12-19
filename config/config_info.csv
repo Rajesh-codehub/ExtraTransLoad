@@ -6,3 +6,4 @@ source_location,type,addOn
 /home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.json,json,columns
 /home/razz/Rajesh/ExtraTransLoad/Credentials/mysql.json,sql,mysql
 /home/razz/Rajesh/ExtraTransLoad/Credentials/postgres.json,sql,postgres
+/home/razz/Rajesh/ExtraTransLoad/Credentials/awsKeys.json,cloud,aws

@@ -1,11 +1,10 @@
 
 import pandas as pd
-from io import StringIO
+import boto3
 import json
 from sqlalchemy import create_engine
 
 
-"""\Reading Data From A CSV Or Delimitted File/"""
 
 def read_from_csv_file(input_path,delimeter):
     df = pd.read_csv(input_path,sep=delimeter)
@@ -31,4 +30,19 @@ def read_from_sql_file(input_path,root):
             print(f"Error: {e}")
 
     return df,table_name
+def read_from_cloud(input_path):
+    with open(input_path,'r') as jsonData:
+        creds = json.load(jsonData)
+        s3 = boto3.resource(service_name = creds['service_name'],region_name = creds['region_name'],
+                             aws_access_key_id = creds['Access_key'],aws_secret_access_key= creds['Secret_key'])
+        
+        obj = s3.Bucket(creds['bucket_name']).Object(creds['file_path']).get()
+
+        if creds['file_format'] == 'csv': 
+            df = pd.read_csv(obj['Body'],index_col=0)
+            
+        else:
+            print("kindly check your config")
+    return df
+        
         

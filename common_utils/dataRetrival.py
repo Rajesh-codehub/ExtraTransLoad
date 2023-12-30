@@ -3,6 +3,9 @@ import pandas as pd
 import boto3
 import json
 from sqlalchemy import create_engine
+from datetime import datetime
+# from logger_config import configure_logger
+# log = configure_logger()
 
 
 
@@ -44,5 +47,74 @@ def read_from_cloud(input_path):
         else:
             print("kindly check your config")
     return df
+def handle_nunValues(df):
+    for col in df.columns:
+        if df[col].dtype == 'int64' or df[col].dtype == "float64":
+            
+            df[col].fillna(df[col].mean(),inplace=True)
+        else:
+            df = df[df[col].notna()]
+    return df
+def dataType_formating(df):
+    for col in df.columns:
+        value = df[col][0]
+
+        # Try converting to int
+        try:
+            int_value = int(value)
+            #print("Converted to int:", int_value)
+            df[col] = df[col].astype('int64')
+        except ValueError:
+            # Try converting to float
+            try:
+                float_value = float(value)
+                #print("Converted to float:", float_value)
+                df[col] = df[col].astype('float64')
+            except ValueError:
+                # Try converting to date
+                try:
+                    date_object = datetime.strptime(value, "%m-%d-%Y")
+                    #print("Converted to date:", date_object)
+                    df[col] = df[col].astype('datetime64[ns]')
+                except ValueError:
+                    try:
+                        date_object = datetime.strptime(value, "%Y-%m-%d")
+                        df[col] = df[col].astype('datetime64[ns]')
+                    except ValueError:
+                        print("found Target")
+                   # log.info("found object data ")
+
+    return df
+def data_cleaning(df):
+
+    df.drop_duplicates(inplace=True)
+    df = handle_nunValues(df)
+    df = dataType_formating(df)
+    return df
+def write_to_csv(df,file_path,file_name):
+    df.to_csv(file_path+file_name,index = False)
+    prof_name = "prof_"+file_name.split(".")[0]+".csv"
+    prof_df = df.describe()
+    prof_df.index.name = "Parameter"
+    prof_df.to_csv(file_path+prof_name,index=True)
+    return True
+def write_to_delimeted(df,file_path,file_name,prof_name,sep):
+    df.to_csv(file_path+file_name,index=False,sep = sep)
+    prof_df = df.describe()
+    prof_df.index.name = "Parameter"
+    prof_df.to_csv(file_path+prof_name,index=True,sep = sep)
+    return True
+def write_to_excel(df,file_path,file_name,prof_name):
+    df.to_excel(file_path+file_name,index=False)
+    prof_df = df.describe()
+    prof_df.index.name = "Parameter"
+    prof_df.to_excel(file_path+prof_name,index=True)
+    return True
+def write_to_parquet(df,file_path,file_name,prof_name):
+    df.to_parquet(file_path+file_name,index=False)
+    prof_df = df.describe()
+    prof_df.index.name = "Parameter"
+    prof_df.to_parquet(file_path+prof_name,index=True)
+    return True
         
         

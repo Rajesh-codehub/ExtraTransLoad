@@ -1,9 +1,3 @@
-source_location,type,addOn
-/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.csv,csv,
-/home/razz/Rajesh/ExtraTransLoad/source_files/delimter.csv,delimited,;
-/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.xlsx,excel,
-/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.parquet,parquet,
-/home/razz/Rajesh/ExtraTransLoad/source_files/mockdata.json,json,columns
-/home/razz/Rajesh/ExtraTransLoad/Credentials/mysql.json,sql,mysql
-/home/razz/Rajesh/ExtraTransLoad/Credentials/postgres.json,sql,postgres
-/home/razz/Rajesh/ExtraTransLoad/Credentials/awsKeys.json,cloud,aws
+source_location,type,addOn,output_path,file_name,type2
+/home/razz/Rajesh/ExtraTransLoad/Credentials/mysql.json,sql,mysql,/home/razz/Rajesh/ExtraTransLoad/output/csv/,mockdata.csv,csv
+
